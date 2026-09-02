@@ -2,7 +2,7 @@
 require_once "../app/database.php";
 use App\Database;
 $db=new Database();
-$title="ADD OR EDIT ANY ITEM";
+$title = "Add or Edit Item";
 if($_POST)
 {
     $id = $_POST['id'];
@@ -180,8 +180,8 @@ if($id)
     <input type="hidden" name="id" value="<?php echo $id ?>" >
 
     <div>
-        <button type = "submit" class="btn" id = "savebtn" >Save</button>
         <button type = "submit" class="btn" id = "cancelbtn" >Cancel</button>
+        <button type="submit" class="btn" id="savebtn">Save</button>
     </div>
     </form>
     </div>
